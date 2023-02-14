@@ -66,3 +66,11 @@ docker version
 ```
 
 ![image](https://user-images.githubusercontent.com/97805339/205437653-5c061a78-30ce-4d0a-9913-50af6be0a79d.png)
+
+#### Run docker without `sudo`:
+
+```
+sudo usermod -aG docker ${USER}
+su - ${USER}
+sudo chmod 666 /var/run/docker.sock
+```
