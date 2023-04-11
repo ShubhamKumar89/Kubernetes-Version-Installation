@@ -1,5 +1,7 @@
 # Docker Specific Version Installation
 
+[Offcial docker guide](https://docs.docker.com/engine/install/ubuntu/)
+
 1. Install packages to allow `apt` to use a repository over HTTPS:
 
 ```bash
@@ -57,6 +59,12 @@ VERSION_STRING=5:20.10.0~3-0~ubuntu-focal
 
 # Install Docker Engine, containerd, and Docker Compose
 sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-compose-plugin
+```
+
+For latest version:
+
+```bash
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
 7. Check the installed docker version:
